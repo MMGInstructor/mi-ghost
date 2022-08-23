@@ -61,6 +61,7 @@ if [ -z "$NODE_ENV" ]; then
 fi
 
 echo "---> Installing Ghost application ..."
+npm install --quiet max-buffer-exceeded-error
 npm install --quiet ghost-cli@latest
 echo "---> Creating Ghost directory ..."
 mkdir ghost-install
