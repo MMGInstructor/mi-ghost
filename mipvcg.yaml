@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  creationTimestamp: "2022-08-23T12:23:47Z"
+  finalizers:
+  - kubernetes.io/pvc-protection
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:spec:
+        f:accessModes: {}
+        f:resources:
+          f:requests:
+            .: {}
+            f:storage: {}
+        f:volumeMode: {}
+      f:status:
+        f:phase: {}
+    manager: oc
+    operation: Update
+    time: "2022-08-23T12:23:47Z"
+  name: ghost-pvc
+  namespace: ghost-blog
+  resourceVersion: "126384609"
+  selfLink: /api/v1/namespaces/ghost-blog/persistentvolumeclaims/ghost-pvc
+  uid: 8a394aaf-4148-48a8-a2a9-7bc8c6d8ebe3
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1G
+  storageClassName: standard
+  volumeMode: Filesystem
+status:
+  phase: Pending
